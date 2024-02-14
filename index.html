@@ -21,10 +21,42 @@
 <body>
     <!--==================== Header ====================-->
 
+    <header class="header">
+      <a href="#" class="logo">
+          <img src="Asstes/Team_Imges/moh1.jpg" alt="" class="profile-image">
+          RAIZERO-TEAM
+      </a>
+      <nav class="navigation">
+          <a href="#Home">Home</a>
+          <a href="#About US">About US</a>
+          <a href="#Team Member">Team Member</a>
+          <a href="#Projects"> Projects</a>
+          <a href="#Contact Us">Contact Us</a> 
+          
+      </nav>
+  </header>
+  
+    <!--================ Main ====================-->
+    <main class="main">
+    <!--================ Home ====================-->
+    <section class="home" id="home">
+      <!-- Here you can add the video and description -->
+      <h2>Welcome to RaiZero Developer Team!</h2>
+      <p>We are a team of specialized developers dedicated to providing innovative and high-quality technological solutions.</p>
+      <video controls autoplay muted>
+          <source src="Asstes/Video/moh6.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      <p>This video illustrates the vision and goals that we strive to achieve as a team.</p>
+  </section>
+</main>
+=======
+
 
     <!--================ Main ====================-->
     <main class="main">
     <!--================ Home ====================-->
+
     <!--================ About ===================-->
 
 
@@ -147,6 +179,47 @@
 
   </main>
 
+
+  <!---------------------Timer---------------------->>
+ 
+  <section class="countdown-section">
+    <div id ="time">
+        <div class="circle" style="--clr:#fff;">
+    <div class="dots day_dot"></div>
+           <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70">dd</circle>    
+    </svg>
+    <div id="days">00</div>
+  </div>
+
+  <div class="circle" style="--clr:#ff2972;">
+    <div class="docts hours_dot"></div>
+    <svg>
+        <circle cx="70" cy="70" r="70"></circle>
+        <circle cx="70" cy="70" r="70">"hh"</circle> 
+     </svg>
+     <div id="hours">00</div>
+     </div>
+
+     <div class="circle" style="--clr:#fee800;">
+        <div class="docts min_dot"></div>
+        <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+            <circle cx="70" cy="70" r="70">"mm"</circle> 
+         </svg>
+         <div id="minutes">00</div>
+        </div> 
+
+        <div class="circle" style="--clr:#04fc43;">
+            <div class="docts sec_dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70">"ss"</circle> 
+             </svg>
+             <div id="seconds">00</div>
+            </div>
+=======
     <!--==================== FOOTER ====================-->
   <footer class="footer">
     <div class="footer__container container grid">
@@ -158,10 +231,95 @@
       <span class="footer__copy">
         &#169; Copyright RaiZero || All rights reserved
       </span>
+
     </div>
   </footer>
 
     <!--================ Scrol UP ================-->
+
+
+    <h2 class="newYear">2024<br><span>Happy New Year       
+    </span></h2>
+        
+        <script>
+            let days = document.getElementById('days');
+            let hours = document.getElementById('hours');
+            let minutes = document.getElementById('minutes');
+            let seconds = document.getElementById('seconds');
+    
+           let dd = document.getElementById('dd');
+           let hh = document.getElementById('hh');
+           let mm = document.getElementById('mm');
+           let ss = document.getElementById('ss');
+    
+           let day_dot = document.querySelector('.day_dot');
+           let hr_dot = document.querySelector('.hr_dot');
+           let min_dot = document.querySelector('.min_dot');
+           let sec_dot = document.querySelector('.sec_dot');
+    
+           let startDate = '01/01/2024 00:00:00';
+           // data format mm/dd/yyyy
+    
+           let x = setInterval(function (){
+          let now = new Date(startDate).gitTime();
+          let Countdown = new Date(startDate).gitTime();
+          let distance = now -Countdown;
+          
+          //time calculation for days , hours , minutes and seconds
+          let d =Math.floor(distance/(1000 * 60 * 60 * 24));
+          let h = Math.floor(distance%(1000 * 60 * 60 * 24)) / (1000 * 60 * 60);
+          let m = Math.floor(distance%(1000 * 60 * 60 )) / (1000 * 60 );
+          let s = Math.floor(distance%(1000 * 60  )) / (1000);
+    
+          //output the results in element with id
+          days.innerHTML = d + "<br><span>Days<span>";
+            hours.innerHTML = d + "<br><span>Hours<span>";
+                Minutes.innerHTML = d + "<br><span>Minutes<span>";
+                    Seconds.innerHTML = d + "<br><span>Seconds<span>";
+    
+          // animte stroke
+          dd.style.strokeDashoffset = 440 - (440 * d) / 365;
+          // 365 days in an year
+          dd.style.strokeDashoffset = 440 - (440 * h) / 24;
+          // 24 hrs in a day
+          dd.style.strokeDashoffset = 440 - (440 * m) / 60;
+          // 60 mins in a hours
+          dd.style.strokeDashoffset = 440 - (440 * s) / 60;
+          // 60 seconds on a seconds
+          
+    
+          day_dot.style.transform = 'rotateZ(${d * 0.986}deg)';
+          // 360eg / 365 days = 0.986
+          hr_dot.style.transform = 'rotateZ(${h * 15}deg)';
+          // 360eg / 24hrs = 15 
+          min_dot.style.transform = 'rotateZ(${m * 6}deg)';
+          // 360eg / 60minutes = 6  
+          sec_dot.style.transform = 'rotateZ(${s * 6}deg)';
+          // 360eg / 60seconds = 6
+    
+          // if the countdown is over , write some text
+          if(distance < 0){
+            clearInterval(x);
+            document.getElementById("Time").style.display = 'none';
+            document.querySelector(".newYear").style.display = 'block';  
+          }
+      
+        })
+    
+        </script>
+    <!--==================== FOOTER ====================-->
+  </section>
+    
+  <footer class="footer">
+      <p class="footer-title">Copyrights @ <span>RAIZERO-TEAM</span></p>
+      <div class="social-iconss">
+          <a href="https://github.com/RAIZERO-Team" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/groups/12993219/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+  </footer>
+
+    <!--================ Scrol UP ================-->
+
 
     <span class="up"><i class="fa-solid fa-arrow-up"></i></span>
 
