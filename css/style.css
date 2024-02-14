@@ -1,7 +1,72 @@
 /*=============== GOOGLE FONTS ===============*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #9a9aaf;
+  width: 100%;
+  color: #fff;
+  padding: 15em;
+  position: fixed;
+  bottom: 40;
+  left: 40;
+  padding: 10px 30px;
+  }
+
+.header-title {
+  font-size: 60em; 
+  font-weight: 1200;
+}
+.header-text {
+  text-align: center;
+}
+
+.profile-image {
+  width: 30px; 
+  height: auto;
+  border-radius: 100%;
+  margin-right: 10px; 
+}
+
+.logo {
+  text-decoration: none;
+  color: #1346d1;
+  font-weight: 1000;
+  font-size: 1.8em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex: 2;
+}
+
+
+.navigation {
+  order: 3; 
+  text-align: center; 
+}
+
+.navigation a {
+  color: #3a6cf4;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: 1000;
+  margin-right: 40px;
+}
+
+.navigation a:hover {
+  color: #601cfc;
+}
+
+
+=======
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
+
 :root {
   --header-height: 3.5rem;
 
@@ -114,6 +179,7 @@ h1, h2, h3, h4 {
   margin-bottom: 1.5rem;
 }
 
+
 .section__subtitle {
   font-size: var(--small-font-size);
   margin-bottom: .25rem;
@@ -142,6 +208,63 @@ h1, h2, h3, h4 {
 }
 
 /*=============== Home ===============*/
+.home {
+  padding: 10rem 5rem;
+  text-align: center;
+  background-color:hsl(229, 16%, 20%);; 
+}
+
+.home h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.9rem;
+  color: #ffffff; 
+}
+
+.home p {
+  font-size: 1.4rem; 
+  color: #ffffff; 
+  margin-bottom: 1.5rem;
+}
+
+.home video {
+  width: 60%;
+  max-width: 600px;
+  max-height: 600px; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto 2rem; 
+}
+=======
+
+.section__subtitle {
+  font-size: var(--small-font-size);
+  margin-bottom: .25rem;
+}
+
+.section__subtitle span {
+  color: var(--first-color);
+}
+
+.main {
+  overflow: hidden; /* For animation ScrollReveal */
+}
+/*=============== BUTTON ===============*/
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  padding: 1rem 1.75rem;
+  border-radius: .5rem;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  transition: box-shadow .4s;
+}
+
+.button:hover {
+  box-shadow: 0 8px 24px hsla(var(--hue), 100%, 40%, .25);
+}
+
+/*=============== Home ===============*/
+
 
 
 /*=============== Team Process (About) ===============*/
@@ -290,12 +413,20 @@ input:checked + label .description {
 .contact__form textarea {
   height: 11rem;
   resize: none;
+
+  margin-bottom: 20rem;
+=======
   margin-bottom: 2rem;
+
 }
 
 .contact__button {
   justify-self: center;
   cursor: pointer;
+
+  margin-bottom: 20rem;
+=======
+
 }
 
 .contact__message {
@@ -305,6 +436,152 @@ input:checked + label .description {
   font-size: var(--small-font-size);
   color: var(--title-color);
 }
+
+/*===================Timer=======================*/
+
+
+#time
+{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+#time .circle
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#time .circle svg circle {
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke-width: 8;
+  stroke: #282828;
+  transform: translate(5px,5px);
+}
+
+#time .circle svg text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#time .circle svg circle:nth-child(2) {
+  stroke: var(--clr);
+  stroke-dasharray: 440;
+}
+
+#time div {
+  position: absolute;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+#time div span {
+  position: absolute;
+  transform: translateX(-50%) translateY(-10px);
+  font-size: 0.35em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+#time .dots {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1000;
+}
+
+#time .dots::before
+{
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background: var(--clr);
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--clr),
+    0 0 60px var(--clr);
+}
+.newYear
+{
+    font-size: 8em;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    line-height: 0.6em;
+    display: none;
+}
+.newYear span
+{
+    font-size: 0.5em;
+    font-weight: 300;
+}
+ 
+
+
+/*=============== Footer ===============*/
+.footer {
+  position: relative;
+  background-color: #9a9aaf;
+  color: #fff;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+}
+
+.footer-title {
+  font-size: 1.5em; 
+  font-weight: 900;
+}
+
+.footer-title span {
+  color: #3a6cf4;
+}
+
+.footer-title span:hover {
+  color: #ffff;
+}
+
+.social-iconss {
+    display: flex;
+    justify-content: center;
+}
+
+
+.social-iconss a {
+    color: #3a6cf4;
+    font-size: 2em;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.social-iconss a:hover {
+    color: #601cfc;
+}
+
+=======
 
 /*=============== Footer ===============*/
 .footer {
@@ -331,6 +608,7 @@ input:checked + label .description {
   font-size: var(--normal-font-size);
   margin-top: 2rem;
 }
+
 /*=============== Scroll BAR ===============*/
 ::-webkit-scrollbar {
   width: .6rem;
@@ -408,6 +686,8 @@ input:checked + label .description {
     height: 20rem;
   }
 
+=======
+
   .footer {
     padding-block: 4.5rem 4rem;
   }
@@ -426,4 +706,5 @@ input:checked + label .description {
     margin: 0;
     justify-self: flex-end;
   }
+
 }
