@@ -1,4 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
@@ -60,6 +61,11 @@
   color: #601cfc;
 }
 
+
+=======
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
 
 :root {
   --header-height: 3.5rem;
@@ -173,6 +179,7 @@ h1, h2, h3, h4 {
   margin-bottom: 1.5rem;
 }
 
+
 .section__subtitle {
   font-size: var(--small-font-size);
   margin-bottom: .25rem;
@@ -227,6 +234,37 @@ h1, h2, h3, h4 {
   display: block; 
   margin: 0 auto 2rem; 
 }
+=======
+
+.section__subtitle {
+  font-size: var(--small-font-size);
+  margin-bottom: .25rem;
+}
+
+.section__subtitle span {
+  color: var(--first-color);
+}
+
+.main {
+  overflow: hidden; /* For animation ScrollReveal */
+}
+/*=============== BUTTON ===============*/
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  padding: 1rem 1.75rem;
+  border-radius: .5rem;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  transition: box-shadow .4s;
+}
+
+.button:hover {
+  box-shadow: 0 8px 24px hsla(var(--hue), 100%, 40%, .25);
+}
+
+/*=============== Home ===============*/
+
 
 
 /*=============== Team Process (About) ===============*/
@@ -373,13 +411,20 @@ input:checked + label .description {
 .contact__form textarea {
   height: 11rem;
   resize: none;
+
   margin-bottom: 20rem;
+=======
+  margin-bottom: 2rem;
+
 }
 
 .contact__button {
   justify-self: center;
   cursor: pointer;
+
   margin-bottom: 20rem;
+=======
+
 }
 
 .contact__message {
@@ -389,6 +434,7 @@ input:checked + label .description {
   font-size: var(--small-font-size);
   color: var(--title-color);
 }
+
 /*===================Timer=======================*/
 
 
@@ -533,6 +579,34 @@ input:checked + label .description {
     color: #601cfc;
 }
 
+=======
+
+/*=============== Footer ===============*/
+.footer {
+  background-color: var(--container-color);
+  padding-block: 3.5rem 2rem;
+}
+
+.footer__container {
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.footer__title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: .25rem;
+}
+
+.footer__title span {
+  color: var(--first-color);
+}
+
+.footer__copy {
+  font-size: var(--normal-font-size);
+  margin-top: 2rem;
+}
+
 /*=============== Scroll BAR ===============*/
 ::-webkit-scrollbar {
   width: .6rem;
@@ -598,4 +672,26 @@ input:checked + label .description {
   .contact__form textarea {
     height: 20rem;
   }
+
+=======
+
+  .footer {
+    padding-block: 4.5rem 4rem;
+  }
+  .footer__container {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: initial;
+  }
+  .footer__title {
+    font-size: var(--bigger-font-size);
+  }
+  .footer__social {
+    column-gap: 1.5rem;
+  }
+  .footer__copy {
+    margin: 0;
+    justify-self: flex-end;
+  }
+
 }
