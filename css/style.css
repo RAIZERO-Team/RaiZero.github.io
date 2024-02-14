@@ -257,6 +257,8 @@ input:checked + label .description {
 
 /*=============== Database ===============*/
 
+/*=============== Team Members ===============*/
+
 
 /*=============== Contact US ===============*/
 
@@ -343,6 +345,17 @@ input:checked + label .description {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: hsl(228, 8%, 45%);
+}
+
+/*=============== Scroll Up ===============*/
+.topscoller {
+  background: linear-gradient(-90deg,#02203c,#001528);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  width: 60px;
+  height: 5px;
 }
 
 /*=============== BREAKPOINTS ===============*/
