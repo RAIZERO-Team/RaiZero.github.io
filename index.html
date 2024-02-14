@@ -31,6 +31,7 @@
           <a href="#Team Member">Team Member</a>
           <a href="#Projects"> Projects</a>
           <a href="#Contact Us">Contact Us</a> 
+          
       </nav>
   </header>
   
@@ -170,6 +171,116 @@
 
   </main>
 
+  <!---------------------Timer---------------------->>
+ 
+  <section class="countdown-section">
+    <div id ="time">
+        <div class="circle" style="--clr:#fff;">
+    <div class="dots day_dot"></div>
+           <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70">dd</circle>    
+    </svg>
+    <div id="days">00</div>
+  </div>
+
+  <div class="circle" style="--clr:#ff2972;">
+    <div class="docts hours_dot"></div>
+    <svg>
+        <circle cx="70" cy="70" r="70"></circle>
+        <circle cx="70" cy="70" r="70">"hh"</circle> 
+     </svg>
+     <div id="hours">00</div>
+     </div>
+
+     <div class="circle" style="--clr:#fee800;">
+        <div class="docts min_dot"></div>
+        <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+            <circle cx="70" cy="70" r="70">"mm"</circle> 
+         </svg>
+         <div id="minutes">00</div>
+        </div> 
+
+        <div class="circle" style="--clr:#04fc43;">
+            <div class="docts sec_dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70">"ss"</circle> 
+             </svg>
+             <div id="seconds">00</div>
+            </div>
+    </div>
+
+    <h2 class="newYear">2024<br><span>Happy New Year       
+    </span></h2>
+        
+        <script>
+            let days = document.getElementById('days');
+            let hours = document.getElementById('hours');
+            let minutes = document.getElementById('minutes');
+            let seconds = document.getElementById('seconds');
+    
+           let dd = document.getElementById('dd');
+           let hh = document.getElementById('hh');
+           let mm = document.getElementById('mm');
+           let ss = document.getElementById('ss');
+    
+           let day_dot = document.querySelector('.day_dot');
+           let hr_dot = document.querySelector('.hr_dot');
+           let min_dot = document.querySelector('.min_dot');
+           let sec_dot = document.querySelector('.sec_dot');
+    
+           let startDate = '01/01/2024 00:00:00';
+           // data format mm/dd/yyyy
+    
+           let x = setInterval(function (){
+          let now = new Date(startDate).gitTime();
+          let Countdown = new Date(startDate).gitTime();
+          let distance = now -Countdown;
+          
+          //time calculation for days , hours , minutes and seconds
+          let d =Math.floor(distance/(1000 * 60 * 60 * 24));
+          let h = Math.floor(distance%(1000 * 60 * 60 * 24)) / (1000 * 60 * 60);
+          let m = Math.floor(distance%(1000 * 60 * 60 )) / (1000 * 60 );
+          let s = Math.floor(distance%(1000 * 60  )) / (1000);
+    
+          //output the results in element with id
+          days.innerHTML = d + "<br><span>Days<span>";
+            hours.innerHTML = d + "<br><span>Hours<span>";
+                Minutes.innerHTML = d + "<br><span>Minutes<span>";
+                    Seconds.innerHTML = d + "<br><span>Seconds<span>";
+    
+          // animte stroke
+          dd.style.strokeDashoffset = 440 - (440 * d) / 365;
+          // 365 days in an year
+          dd.style.strokeDashoffset = 440 - (440 * h) / 24;
+          // 24 hrs in a day
+          dd.style.strokeDashoffset = 440 - (440 * m) / 60;
+          // 60 mins in a hours
+          dd.style.strokeDashoffset = 440 - (440 * s) / 60;
+          // 60 seconds on a seconds
+          
+    
+          day_dot.style.transform = 'rotateZ(${d * 0.986}deg)';
+          // 360eg / 365 days = 0.986
+          hr_dot.style.transform = 'rotateZ(${h * 15}deg)';
+          // 360eg / 24hrs = 15 
+          min_dot.style.transform = 'rotateZ(${m * 6}deg)';
+          // 360eg / 60minutes = 6  
+          sec_dot.style.transform = 'rotateZ(${s * 6}deg)';
+          // 360eg / 60seconds = 6
+    
+          // if the countdown is over , write some text
+          if(distance < 0){
+            clearInterval(x);
+            document.getElementById("Time").style.display = 'none';
+            document.querySelector(".newYear").style.display = 'block';  
+          }
+      
+        })
+    
+        </script>
     <!--==================== FOOTER ====================-->
   </section>
     
