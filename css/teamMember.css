@@ -20,6 +20,7 @@ body {
 .square
 {
   position: relative;
+  top: -80px;
   width: 400px;
   height: 400px;
   display: flex;
