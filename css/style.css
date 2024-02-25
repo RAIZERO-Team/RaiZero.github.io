@@ -406,19 +406,19 @@ body {
 }
 
 .Team_Process_card[for="c1"] {
-    background-image: url('../Asstes/UX-UI.jpg');
+    background-image: url('../Asstes/img/UX-UI.jpg');
 }
 .Team_Process_card[for="c2"] {
-    background-image: url('../Asstes/Software Engineering.jpg');
+    background-image: url('../Asstes/img/Software Engineering.jpg');
 }
 .Team_Process_card[for="c3"] {
-    background-image: url('../Asstes/Frontend.jpg');
+    background-image: url('../Asstes/img/Frontend.jpg');
 }
 .Team_Process_card[for="c4"] {
-    background-image: url('../Asstes/Backend.jpg');
+    background-image: url('../Asstes/img/Backend.jpg');
 }
 .Team_Process_card[for="c5"] {
-  background-image: url('../Asstes/Database.jpg');
+  background-image: url('../Asstes/img/Database.jpg');
 }
 
 
