@@ -14,6 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background-color: #eee;
 }
 
 
@@ -27,6 +28,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 0 40px;
+  margin-bottom: 300px;
 }
 
 .square span
@@ -75,8 +77,7 @@ body {
 }
 
 
-.bottom
-{
+.bottom {
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -84,48 +85,69 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap; 
 }
 
-.icon
-{
+.icon {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  gap: 40px;
+  gap: 15px;
+  flex-wrap: wrap; 
+  border-radius: 50%; 
+  margin-bottom: -50px;
+  margin-top: 30px;
+  width: 40%;
+  height: -20px;
+  
 }
 
-.icon .imgBx
-{
+.icon .imgBx {
   position: relative;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+  width: 150px; 
+  height: 150px; 
+  border-radius: 70%; 
   overflow: hidden;
   transition: 0.5s;
   box-shadow: 0 0 0 4px #fff;
   opacity: 0.5;
+  margin: 10px 4px; 
+  flex: 0 0 calc(20% - 10px); 
+  box-shadow: 0 0 0 4px #66a3ff, 0 0 0 10px #fff;
+  background-color: #fff; 
+  margin: 1px; 
+  transform: scale(0.6); 
+  display: inline-block; 
+  text-align: inherit; 
+  margin-top: 20px;
+  margin-bottom: -80px;
 }
 
-.icon .imgBx .active
-{
+
+
+.icon .imgBx .active {
   opacity: 1;
   scale: 1.2;
-  margin: 0 10px;
+  margin: 0 15px;
   box-shadow: 0 0 0 4px #fff,
   0 0 0 10px #66a3ff;
+  
 }
 
-.icon .imgBx img
-{
+/**************** Done***/
+.icon .imgBx img {
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 50%; 
+  
 }
+
 
 .contentBx
 {
@@ -137,6 +159,9 @@ body {
   transition: 0.5s;
   transform: scale(0);
   opacity: 0;
+  grid-template-columns: repeat(5, 1fr); 
+  grid-gap: 10px; 
+
 }
 
 .contentBx.active
@@ -174,6 +199,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  
 }
 .contentBx .card  .textBx
 {
@@ -187,8 +213,9 @@ body {
 {
   position: relative;
   font-size: 1.27em;
-  font-weight: 600;
-  color: #333;
+  font-weight: 200px;
+  max-width: bold;
+  color: #333 ;
   line-height: 1em;
   text-transform: uppercase;
 }
@@ -196,7 +223,7 @@ body {
 .contentBx .card  .textBx h3 b
 {
   font-size: 0.80em;
-  color: #222;
+  color: #333;
   font-weight: 500;
   letter-spacing: 0.1em;
 }
