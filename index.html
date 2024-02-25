@@ -1,162 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--=============== Discription ===============-->
-  <meta name="description" content="This website is to RaiZero Developer Team"/>
+    <meta
+      name="description"
+      content="This website is to RaiZero Developer Team"
+    />
 
-  <!--=============== Icons ===============-->
-  <link rel="icon" href=""/>
+    <!--=============== Icons ===============-->
+    <link rel="icon" href="Asstes/RaiZero_Icon.png" type="Logo/png" />
 
-  <!--=============== FontAwesome ===============-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--=============== FontAwesome ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!--=============== CSS And Title ===============-->
-    <link rel="stylesheet" href="css/style.css">
+    <!--=============== CSS And Title ===============-->
+    <link rel="stylesheet" href="css/style.css" />
     <title>RaiZero</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!--==================== Header ====================-->
-
     <header class="header">
-      <a href="#" class="logo">
-          <img src="Asstes/Team_Imges/moh1.jpg" alt="" class="profile-image">
-          RAIZERO-TEAM
-      </a>
-      <nav class="navigation">
-          <a href="#Home">Home</a>
-          <a href="#About US">About US</a>
-          <a href="#Team Member">Team Member</a>
-          <a href="#Projects"> Projects</a>
-          <a href="#Contact Us">Contact Us</a> 
-          
-      </nav>
-  </header>
-  
+      <div class="logo-title">
+        <img class="logo" src="Asstes/RaiZero.jpg" alt="Logo" />
+        <h1>RaiZero</h1>
+      </div>
+      <div class="navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#team-members">Team Members</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+      </div>
+    </header>
+
     <!--================ Main ====================-->
-    <main class="main">
+    <main></main>
     <!--================ Home ====================-->
-    <section class="home" id="home">
-      <!-- Here you can add the video and description -->
-      <h2>Welcome to RaiZero Developer Team!</h2>
-      <p>We are a team of specialized developers dedicated to providing innovative and high-quality technological solutions.</p>
-      <video controls autoplay muted>
-          <source src="Asstes/Video/moh6.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-      </video>
-      <p>This video illustrates the vision and goals that we strive to achieve as a team.</p>
-  </section>
-</main>
-
-
-    <!--================ About ===================-->
-
+    <section class="Home_section" id="home">
+      <div class="Home">
+        <h2>Welcome to RaiZero Developer Team🤖</h2>
+        <p>
+          RAIZERO is a comprehensive software development team specializing in
+          the design and development of user experiences (UX/UI) and programming
+          for web and desktop applications. We provide services in the areas of
+          front-end and back-end, as well as database management and software
+          development. Our services are characterized by innovation and
+          efficiency, with a focus on meeting our customers’ needs and achieving
+          their technical goals.
+        </p>
+        <div class="img">
+          <img src="Asstes/Team_Imges/Team Img.jpg" alt="Team Img" />
+        </div>
+        <div class="Team_video">
+          <video controls autoplay muted>
+            <source src="Asstes/Video/CS-Bridge.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </section>
 
     <!--================ Team Process (About) ============-->
-      <section class="Team_Process" id="Team_Process">
-
-    <div class="wrapper">
-      <div class="container">
-          <input type="radio" name="slide" id="c1" checked>
-          <label for="c1" class="card">
-              <div class="row">
-                  <div class="icon">1</div>
-                  <div class="description">
-                      <h4>UX/UI Design</h4>
-                      <p>Winter has so much to offer -
-                      creative activities</p>
-                  </div>
+    <section class="section" id="about">
+      <div class="Team_Process_wrapper">
+        <div class="Team_Process_container">
+          <input type="radio" name="slide" id="c1" checked />
+          <label for="c1" class="Team_Process_card">
+            <div class="row">
+              <div class="Team_Process_icon">1</div>
+              <div class="Team_Process_description">
+                <h4>UX/UI Design</h4>
               </div>
+            </div>
           </label>
-          <input type="radio" name="slide" id="c2" >
-          <label for="c2" class="card">
-              <div class="row">
-                  <div class="icon">2</div>
-                  <div class="description">
-                      <h4>Software Engineering</h4>
-                      <p>Gets better every day -
-                      stay tuned</p>
-                  </div>
+          <input type="radio" name="slide" id="c2" />
+          <label for="c2" class="Team_Process_card">
+            <div class="row">
+              <div class="Team_Process_icon">2</div>
+              <div class="Team_Process_description">
+                <h4>Software Engineering</h4>
               </div>
+            </div>
           </label>
-          <input type="radio" name="slide" id="c3" >
-          <label for="c3" class="card">
-              <div class="row">
-                  <div class="icon">3</div>
-                  <div class="description">
-                      <h4>Frontend</h4>
-                      <p>Help people all over the world</p>
-                  </div>
+          <input type="radio" name="slide" id="c3" />
+          <label for="c3" class="Team_Process_card">
+            <div class="row">
+              <div class="Team_Process_icon">3</div>
+              <div class="Team_Process_description">
+                <h4>Frontend</h4>
               </div>
+            </div>
           </label>
-          <input type="radio" name="slide" id="c4" >
-          <label for="c4" class="card">
-              <div class="row">
-                  <div class="icon">4</div>
-                  <div class="description">
-                      <h4>Backend</h4>
-                      <p>Space engineering becomes
-                      more and more advanced</p>
-                  </div>
+          <input type="radio" name="slide" id="c4" />
+          <label for="c4" class="Team_Process_card">
+            <div class="row">
+              <div class="Team_Process_icon">4</div>
+              <div class="Team_Process_description">
+                <h4>Backend</h4>
               </div>
+            </div>
           </label>
-          <input type="radio" name="slide" id="c5" >
-          <label for="c5" class="card">
-              <div class="row">
-                  <div class="icon">5</div>
-                  <div class="description">
-                      <h4>Database</h4>
-                      <p>Space engineering becomes
-                      more and more advanced</p>
-                  </div>
+          <input type="radio" name="slide" id="c5" />
+          <label for="c5" class="Team_Process_card">
+            <div class="row">
+              <div class="Team_Process_icon">5</div>
+              <div class="Team_Process_description">
+                <h4>Database</h4>
               </div>
+              <br />
+            </div>
           </label>
+        </div>
       </div>
-  </div>
+    </section>
 
-  </section>
-  
-  <!--================ UX / UI ================-->
-  <section class="UX-UI" id="UX-UI">
+    <!--================ UX / UI ================-->
+    <section class="team_process_section" id="about">
+      <div class="UX_UI">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quaerat
+          veniam vitae quos cum nobis, repellendus rem, consequuntur deleniti
+          aspernatur amet, doloremque reiciendis? Alias, error. Vel sed
+          temporibus perspiciatis odio.
+        </p>
 
-  </section>
-
+        <div class="img">
+          <img src="Asstes/UX-UI.jpg" alt="UX-UI Img" />
+        </div>
+      </div>
+    </section>
     <!--================ Software Engineering ================-->
-    <section class="Software-Engineering" id="Software-Engineering">
+    <section class="team_process_section" id="about">
+      <div class="Software_Engineering">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quaerat
+          veniam vitae quos cum nobis, repellendus rem, consequuntur deleniti
+          aspernatur amet, doloremque reiciendis? Alias, error. Vel sed
+          temporibus perspiciatis odio.
+        </p>
 
+        <div class="img">
+          <img src="Asstes/Software Engineering.jpg" alt="UX-UI Img" />
+        </div>
+      </div>
     </section>
-    
     <!--================ Frontend ================-->
-    <section class="frontend" id="frontend">
+    <section class="team_process_section" id="about">
+      <div class="Frontend">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quaerat
+          veniam vitae quos cum nobis, repellendus rem, consequuntur deleniti
+          aspernatur amet, doloremque reiciendis? Alias, error. Vel sed
+          temporibus perspiciatis odio.
+        </p>
 
+        <div class="img">
+          <img src="Asstes/Frontend.jpg" alt="UX-UI Img" />
+        </div>
+      </div>
+    </section>
+    <!--================ Backend ================-->
+    <section class="team_process_section" id="about">
+      <div class="Backend">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quaerat
+          veniam vitae quos cum nobis, repellendus rem, consequuntur deleniti
+          aspernatur amet, doloremque reiciendis? Alias, error. Vel sed
+          temporibus perspiciatis odio.
+        </p>
+
+        <div class="img">
+          <img src="Asstes/Backend.jpg" alt="UX-UI Img" />
+        </div>
+      </div>
+    </section>
+    <!--================ Databse ================-->
+    <section class="team_process_section" id="about">
+      <div class="Databse">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quaerat
+          veniam vitae quos cum nobis, repellendus rem, consequuntur deleniti
+          aspernatur amet, doloremque reiciendis? Alias, error. Vel sed
+          temporibus perspiciatis odio.
+        </p>
+
+        <div class="img">
+          <img src="Asstes/Database.jpg" alt="UX-UI Img" />
+        </div>
+      </div>
     </section>
 
-    <!--================ Backend =================-->
-    <section class="backend" id="backend">
+    <!--================ Projects ================-->
 
-    </section>
-
-    <!--================ Database =================-->
-    <section class="database" id="database">
-
+    <section class="section" id="projects">
+      <div class="Projects" id="services">
+        <h2 class="projecttitle">Projects</h2>
+        <div class="projectcontents">
+          <div class="projectcard">
+            <div class="projecticon">
+              <a
+                href="https://github.com/RAIZERO-Team/OctoDo"
+                target="_blank"
+                class="more-details"
+                ><strong>MORE DETAILS</strong></a
+              >
+            </div>
+            <div class="projectinfo">
+              <h3><b>OctoDO</b></h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestias ratione, illum praesentium repellat sunt vel quis
+                numquam, nobis, perferendis ipsam labore fugit debitis totam
+                temporibus? Eaque deserunt optio magni eos!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Projects" id="services">
+        <h2 class="projecttitle">Projects</h2>
+        <div class="projectcontents">
+          <div class="projectcard">
+            <div class="projecticon">
+              <a
+                href="https://github.com/RAIZERO-Team/OctoDo"
+                target="_blank"
+                class="more-details"
+                ><strong>MORE DETAILS</strong></a
+              >
+            </div>
+            <div class="projectinfo">
+              <h3><b>OctoDO</b></h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestias ratione, illum praesentium repellat sunt vel quis
+                numquam, nobis, perferendis ipsam labore fugit debitis totam
+                temporibus? Eaque deserunt optio magni eos!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--================ Team Member =============-->
+    <section class="section" id="team-members">
 
-  <section class="Badawi">
+    </section>
 
-  </section>
-  
-    <!--================ Projects ================-->
+    <!--================ Team Timer ================-->
 
+    <section class="section" id=""></section>
 
     <!--==================== CONTACT ====================-->
+    <section class="contact section" id="contact-us">
+      <div class="contact_img">
+        <img src="Asstes/Contact.svg" alt="Contact Image">
+      </div>
 
-    <!-- <section class="contact section" id="contact">
+    <div class="contact_content">
       <h3 class="section__subtitle">
         Get In <span>Touch</span>
       </h3>
@@ -170,91 +281,33 @@
             <input type="email" name="user_email" required placeholder="Enter your email" class="contact__input">
           </div>
           <textarea name="user_project" required placeholder="Enter your message" class="contact__input"></textarea>
-  
           <p class="contact__message" id="contact-message"></p>
-  
           <button type="submit" class="button contact__button">Send Message</button>
         </form>
       </div>
-  </section> -->
-
-
-  <!---------------------Timer---------------------->>
-
-  <section class="countdown-section">
-    <div id="time">
-        <div class="circle" style="--clr:#fff;">
-            <div class="dots day_dot"></div>
-            <svg>
-                <circle cx="70" cy="70" r="70"></circle>
-                <circle cx="70" cy="70" r="70">dd</circle>
-            </svg>
-            <div id="days">00</div>
-        </div>
-
-        <div class="circle" style="--clr:#ff2972;">
-            <div class="docts hours_dot"></div>
-            <svg>
-                <circle cx="70" cy="70" r="70"></circle>
-                <circle cx="70" cy="70" r="70">"hh"</circle> 
-            </svg>
-            <div id="hours">00</div>
-        </div>
-
-        <div class="circle" style="--clr:#fee800;">
-            <div class="docts min_dot"></div>
-            <svg>
-                <circle cx="70" cy="70" r="70"></circle>
-                <circle cx="70" cy="70" r="70">"mm"</circle> 
-            </svg>
-            <div id="minutes">00</div>
-        </div> 
-
-        <div class="circle" style="--clr:#04fc43;">
-            <div class="docts sec_dot"></div>
-            <svg>
-                <circle cx="70" cy="70" r="70"></circle>
-                <circle cx="70" cy="70" r="70">"ss"</circle> 
-            </svg>
-            <div id="seconds">00</div>
-        </div>
     </div>
+  </section>
 
-    <!--<h2 class="Start RAIZERO">2023<br><span>RAIZERO_TEAM</span></h2>-->
-        
+    <!--==================== FOOTER ====================-->
 
-</section>
-
-      <!--==================== FOOTER ====================-->
-  <!-- <footer class="footer">
-    <div class="footer__container container grid">
-      <div>
-        <h1 class="footer__title">
-          RaiZero-<span>Team</span>
-        </h1>
+    <!-- <footer class="footer">
+      <p class="footer-title">Copyrights @ <span>RAIZERO-TEAM</span></p>
+      <div class="social-iconss">
+          <a href="https://github.com/RAIZERO-Team" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/groups/12993219/" target="_blank"><i class="fab fa-linkedin"></i></a>
       </div>
-      <span class="footer__copy">
-        &#169; Copyright RaiZero || All rights reserved
-      </span>
-
-    </div>
-  </footer> -->
-
-  <footer class="footer">
-    <p class="footer-title">Copyrights @ <span>RAIZERO-TEAM</span></p>
-    <div class="social-iconss">
-        <a href="https://github.com/RAIZERO-Team" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/groups/12993219/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
-</footer>
+    </footer> -->
 
     <!--================ Scrol UP ================-->
 
-    <span class="up"><i class="fa-solid fa-arrow-up"></i></span>
+    <!-- <span class="up"><i class="fa-solid fa-arrow-up"></i></span> -->
 
     <!--=============== EMAIL JS ===============-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <!--=============== MAIN JS ===============-->
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
